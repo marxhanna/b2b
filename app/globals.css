@@ -1,21 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: black;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: black;
+    --foreground: #0a0a0a;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", serif;
+  scroll-behavior: smooth;
+}
+
+.floating-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 2% auto;
+  width: 80%;
+  padding: 5px 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+.floating-header.transparent {
+  background-color: transparent;
+  border: none;
+  border-radius: 50px;
+}
+
+.floating-header.solid {
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  margin: 0 auto;
+  padding: 1% 5% 0% 5%;
+}
+
+.floating-header.solidWhite {
+  background-color: rgb(255, 255, 255, 0.85);
+  width: 100%;
+  margin: 0 auto;
+  padding: 1% 5% 0% 5%;
+}
+
+.floating-header .logo-header img {
+  height: 40px;
+}
+
+.floating-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.floating-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-weight: 300;
+}
+
+.floating-header nav ul li a:hover {
+  color: #f0f0f0;
+}
+
+.button-header {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  padding: 7px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, background-position 0.5s ease;
+  margin-left: 5%;
+  text-decoration: none; 
+}
+
+.button-header:hover {
+  background-color: #e6e6e6;
+  border: 1px solid #e6e6e6;
+  background-position: 0 0;
+}
+
+.navInfo {
+  display: flex;
+  align-items: baseline;
+  font-size: 20px;
+}
+
+.container-header {
+  font-weight: 100;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo-header {
+  width: 100px;
+  height: 100px;
+}
+
+.frontPageTitle {
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: -3px;
 }
