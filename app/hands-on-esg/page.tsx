@@ -4,13 +4,11 @@ import React, { useEffect, useState } from 'react';
 import Link from "next/link";
 import img from '../img/logos/nobis_principal_branca.png';
 import imgFooter from '../img/logos/nobis_roxo.png';
-import heroBG from '../img/branding/brandingCapa.png';
-import socials from '../img/branding/socials.png';
-import section3img from '../img/branding/section3img.png';
-import section4img from '../img/branding/secao4img.png';
-import section5img from '../img/branding/secao5img.png';
-import palestras from '../img/palestras.png';
-import esgcast from '../img/esgcast.png';
+import heroBG from '../img/handson/handsonBG.png';
+import c1 from '../img/handson/1.png';
+import c2 from '../img/handson/2.png';
+import c3 from '../img/handson/3.png';
+import c4 from '../img/handson/4.png';
 
 export default function Home() {
   useEffect(() => {
@@ -79,84 +77,40 @@ export default function Home() {
       {/* Conteúdo sobreposto */}
       <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', color: '#fff', width: "80%", margin: "5% auto", padding: "0 20px" }}>
         <p className="frontPageTitle" style={{ fontSize: '8.5vh', textAlign: 'center' }}>
-            Conecte impacto socioambiental<br/>ao valor das marcas
+          Hands-on ESG
         </p>
         <p className='subtitle'>
-            Em vez de desperdiçar investimentos com <strong>publicidade ineficaz, faça Social Branding.</strong>
+          Aprenda a <b>vetorizar ESG</b> na<br/>estratégia para <b>gerar resultados</b>.
         </p>
         <a className="initBtn" href="#sobre">Saiba Mais</a>
       </div>
     </div>
-
-    <div className='brandingSecao1'>
+    <div className='handsonSecao1'>
         <div className='text'>
-            <h1 style={{ fontSize: "4.5vh" }}>O cenário da publicidade<br/>digital está <span className='gradient-text'>saturado.</span></h1>
-            <br/>
-            <p>
-                Anúncios que <b>não são vistos</b>, <b>ignorados</b> ou <b>bloqueados</b> por usuários que buscam uma experiência mais autêntica e menos invasiva.
-            </p>
-            <br/>
-            <ul>
-                <li>US$ 5,8 bilhões são <b>desperdiçados</b> anualmente com <b>anúncios ineficazes</b>. (ANA)</li>
-                <br/>
-                <li>Mais de 30% dos investimentos em ads são consumidos por <b>cliques falsos</b> e <b>bots</b>. (Luiz Zaka - DROPS)</li>
-                <br/>
-                <li>912 milhões de usuários utilizam <b>bloqueadores</b> de anúncios. (Luiz Zaka - DROPS)</li>
-            </ul>
+          <h1 style={{ fontSize:'5vh', lineHeight: '5vh', marginBottom: '5%' }}><span className='gradient-text'>Agilis:</span> mais do que um conceito, ações que geram resultados.</h1>
+          <p>Com a Metodologia Agilis para consultoria, sua empresa aprende, aplica e atinge resultados com ESG.</p>
+          <button>Saiba mais</button>
         </div>
-        <img src={socials.src} style={{ height: "80%" }} />
-    </div>
-    <div className='brandingSecao2'>
-        <h1>A Nobis coloca sua marca no <br/> coração dos consumidores.</h1>
-    </div>
-    <div className='brandingSecao3'>
         <div className='text'>
-          <p>E como funciona?</p>
-          <h1>Nossa <span className='gradient-text'>abordagem:</span></h1>
-          <ul>
-            <li>Co-criação de programas socioambientais</li>
-            <li>Escolha do público-alvo</li>
-            <li>Qualificação</li>
-            <li>Ativação Econômica Mútua</li>
-            <li>Monitoramento</li>
-          </ul>
-          <button>Simples assim!</button>
+          <h1>Aprender</h1>
+          <p>Coloque suas equipes na mesma página para dar o primeiro passo.</p>
+          <h1>Fazer</h1>
+          <p>Implante ESG nas operações de ponta-a-ponta para intensificar a geração de valor e aumentar a competitividade.</p>
+          <h1>Crescer</h1>
+          <p>Vetorize e mensure o impacto do ESG em todas as áreas do negócio com indicadores e monitoramento estruturado.</p>
         </div>
-        <img src={section3img.src} />
     </div>
-    <div className='brandingSecao4'>
-      <img src={section4img.src} />
-      <div className='text'>
-        <p>Num click!</p>
-        <h1>Monitoramento em <span className='gradient-text'>tempo real</span></h1>
-        <ul>
-          <li>Indicadores de Branding e Expansão de Mercado.</li>
-          <li>30 indicadores socioambientais alinhados aos ODS e ESG.</li>
-        </ul>
-        <button>Dados na palma da mão</button>
-      </div>
-    </div>
-    <div className='brandingSecao5'>
-        <div className='title'>
-          <h1 style={{ textAlign: "center" }}>Equilíbrio entre <span className='gradient-text'>Impacto<br/>Global</span> e <span className='gradient-text'>Relevância Local</span></h1>
+    <div className='title'>
+          <p>Como funciona? <a style={{ letterSpacing: "-4px", marginLeft: "1%" }}>----------------</a></p>
+          <h1>Academy <span className='gradient-text'>Hands-On</span></h1>
         </div>
-        <img style={{ margin: "0 auto", height: "80vh" }} src={section5img.src} />
-    </div>
-    <br/><br/>
-    <div className='outrasSolucoes' style={{ height: "80vh" }}>
-      <h1>Outras <span className='gradient-text'>Soluções</span></h1>
-      <div className='solucoesCards'>
-        <div className='solucoesCard'>
-          <img src={palestras.src} />
-          <h3>Palestras</h3>
-          <p>Conhecimentos, reflexões e práticas em ESG.</p>
+    <div className='handsonSecao2'>
+        <div className='esghowto'>
+          <img src={c1.src} />
+          <img src={c2.src} />
+          <img src={c3.src} />
+          <img src={c4.src} />
         </div>
-        <div className='solucoesCard'>
-          <img src={esgcast.src} />
-          <h3>ESGCAST</h3>
-          <p>Seu podcast semanal <br/> sobre ESG.</p>
-        </div>
-      </div>
     </div>
     <div className="footer">
           <div className="content">
