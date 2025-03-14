@@ -5,6 +5,7 @@ import Link from "next/link";
 import img from '../img/logos/nobis_principal_branca.png';
 import imgFooter from '../img/logos/nobis_roxo.png';
 import heroBG from '../img/esgcast/esgcastBG.png';
+import esgcast from '../img/esgcast/esgcast.png';
 
 export default function Home() {
   useEffect(() => {
@@ -87,16 +88,31 @@ export default function Home() {
         <div>
           <h1>Pow<br/>ered<br/><span>by Nobis</span></h1>
         </div>
-        <div></div>
-        <div>
+        <div className='vl'></div>
+        <div className='esgcastContentTextInfo'>
           <p>
-            O primeiro podcast de ESG focado em contextos atuais, com diálogos, debates com relevância e conhecimento. 
+            O primeiro podcast de ESG focado em contextos atuais,<br/>com diálogos, debates com relevância e conhecimento. 
             <br/>
-            Atualmente com mais de 3000 reproduções em 10 países.</p>
+            <span>Atualmente com mais de 3000 reproduções em 10 países.</span></p>
         </div>
       </div>
       <div className='esgcastContentPlaylist'>
         <iframe style={{ borderRadius: "12px", margin: "0 auto"}} src="https://open.spotify.com/embed/playlist/1y0rOHpyMRsr6BUOfS86Qs?utm_source=generator&theme=0" width="80%" height="352" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <div className='disponibilidade'>
+      <div className='title'>
+        <h1>Disponível nas<br/><span className='gradient-text'>plataformas</span></h1>
+      </div>
+      <div className='disponibilidadeContent'>
+        <div className='esgcastImg'><img src={esgcast.src} /></div>
+        <div>
+          <div className='serviceCard'></div>
+          <div className='serviceCard'></div>
+          <div className='serviceCard'></div>
+          <div className='serviceCard'></div>
+        </div>
       </div>
     </div>
     
