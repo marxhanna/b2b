@@ -5,7 +5,6 @@ import Link from "next/link";
 import img from '../app/img/logos/nobis_principal_branca.png';
 import imgFooter from '../app/img/logos/nobis_roxo.png';
 import heroBG from '../app/img/heroBG.png';
-import teste from '../app/img/time/Marina.png';
 import impacto from '../app/img/lp/impacto.png';
 import branding from '../app/img/lp/branding.png';
 import materialidade from '../app/img/lp/materialidade.png';
@@ -91,7 +90,7 @@ export default function Home() {
         <nav>
           <ul>
             <li style={{ marginLeft: '-55%' }}><a href="#mvv">Sobre</a></li>
-            <li style={{ marginLeft: '20%' }}><Link href="/projetos">Soluções</Link></li>
+            <li style={{ marginLeft: '20%' }}><Link href="#solucoes">Soluções</Link></li>
             <li style={{ marginLeft: '20%' }}><Link href="#nobis">Conteúdo</Link></li>
           </ul>
         </nav>
@@ -175,14 +174,14 @@ export default function Home() {
         <div className='text right'>
           <h2>Comunicação e <br/> Social <span className='gradient-text'>Branding</span></h2>
           <p className='desc'>Até agora sua empresa fez campanhas para dizer que é responsável ou investiu em causas que realmente conectam sua marca a seu público?</p>
-          <button className='descBtn'>A Nobis é o novo canal de comunicação!</button>
+          <button className='descBtn' onClick={() => window.location.href = `/social-branding`}>A Nobis é o novo canal de comunicação!</button>
         </div>
     </div>
     <div className='section' id='materialidade'>
     <div className='text'>
           <h2>Selo de <span className='gradient-text'>Materialidade</span></h2>
           <p className='desc'>Materialidade de Investimentos em ESG para auditoria e <i>due dilligence</i> em tempo real.</p>
-          <button className='descBtn'>Certificação dos Investimentos em Impacto</button>
+          <button className='descBtn' onClick={() => window.location.href = `/impacto-com-monitoramento#selo`}>Certificação dos Investimentos em Impacto</button>
         </div>
         <img src={materialidade.src} className='imgSolutions right' />
     </div>
@@ -191,14 +190,14 @@ export default function Home() {
         <div className='text'>
           <h2>Hands-On <span className='gradient-text'>ESG</span></h2>
           <p className='desc'>Aprenda e implante ESG com um framework ideal para sua empresa gerar resultados.</p>
-          <button className='descBtn'>ESG como Vetor Estratégico do Negócio</button>
+          <button className='descBtn' onClick={() => window.location.href = `/hands-on-esg`}>ESG como Vetor Estratégico do Negócio</button>
         </div>
     </div>
     <div className='section' id='rota'>
     <div className='text'>
           <h2>Rota <span className='gradient-text'>ESG</span></h2>
           <p className='desc'>Descubra o nível de maturidade da sua organização em ESG.</p>
-          <button className='descBtn'>Faça o teste!</button>
+          <button className='descBtn' onClick={() => window.location.href = `/rota-esg`}>Faça o teste!</button>
         </div>
         <img src={rota.src} className='imgSolutions right' />
     </div>
@@ -207,7 +206,7 @@ export default function Home() {
         <div className='text'>
           <h2>Quiz do Consumidor <span className='gradient-text'>ESG</span></h2>
           <p className='desc'>Descubra o seu nível de conhecimento e comportamento em relação às práticas de consumo ESG.</p>
-          <button className='descBtn'>Responda ao Quiz!</button>
+          <button className='descBtn' onClick={() => window.location.href = `/quiz-do-consumidor`}>Responda ao Quiz!</button>
         </div>
     </div>
     <div className='certificados'>

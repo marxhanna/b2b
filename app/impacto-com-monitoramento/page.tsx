@@ -143,7 +143,7 @@ export default function Home() {
         </div>
         <img style={{ margin: "0 auto" }} src={reportings.src} />
     </div>
-    <div className='impactoSecao6'>
+    <div className='impactoSecao6' id='selo'>
         <img src={selo.src} style={{ width: '80%', margin: '0 auto' }} />
     </div>
 
