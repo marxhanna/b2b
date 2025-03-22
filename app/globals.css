@@ -929,6 +929,10 @@ li {
   border-radius: 20px;
 }
 
+.imgMobile {
+  display: none;
+}
+
 .disponibilidadeContent {
   display: flex;
   justify-content: center;
@@ -941,5 +945,227 @@ li {
 }
 
 @media screen and (max-width: 1000px) {
+
+  .logo-header img {
+    display: none;
+  }
+
+  .floating-header nav ul li a {
+    font-size: 1.5vh;
+  }
+
+  #navSobre {
+    margin-left: 90% !important;
+  }
+
+  #navSolucoes {
+    margin-left: 20% !important;
+  }
+
+  #navConteudo {
+    margin-left: -15% !important;
+  }
+
+  .button-header {
+    font-size: 1.5vh;
+    padding: 1% 3%;
+    margin-left: -1% !important;
+  }
+
+  .frontPageTitle {
+    font-size: 5.5vh;
+    text-align: center;
+    margin-bottom: 20%;
+    line-height: 5.5vh;
+  }
+
+  .subtitle {
+    font-size: 2.5vh;
+    width: 100%;
+    margin-bottom: 20%;
+  }
+
+  .initBtn {
+    font-size: 2vh;
+  }
+
+  .title p {
+    font-size: 2vh;
+  }
+
+  .title h1 {
+    font-size: 3.2vh;
+  }
+
+  #materialidade.section {
+    height: 50vh;
+  }
+
+  #handson.section {
+    height: 50vh;
+    text-align: right;
+  }
+
+  #rota.section {
+    height: 40vh;
+  }
+
+  #quiz.section {
+    height: 60vh;
+    text-align: right;
+  }
+
+  .section {
+    height: 70vh;
+  }
+
+  .text {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .floatingText {
+    font-size: 2vh !important;
+    width: 100%;
+  }
+  
+  .text h2 {
+    font-size: 4.5vh;
+  }
+  
+  .desc {
+    font-size: 2.5vh !important;
+  }
+  
+  .imgSolutions {
+    display: none;
+  }
+  
+  .descBtn {
+    font-size: 1.5vh !important;
+  }
+
+  .outrasSolucoes {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .outrasSolucoes h1 {
+    margin: 15% auto;
+    font-size: 4.2vh;
+    letter-spacing: -1px;
+  }
+  
+  .solucoesCard {
+    width: 45%;
+  }
+  
+  .solucoesCard h3 {
+    font-size: 1.5vh;
+    font-weight: 600;
+    margin-top: 5%;
+  }
+  
+  .solucoesCard p {
+    font-size: 1.5vh;
+    font-weight: 400;
+    width: 80%;
+    letter-spacing: -1px;
+    margin: 2% auto;
+  }
+  
+  .solucoesCard img {
+    width: 100vw;
+    height: 50vw;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .equipe {
+    margin-top: -15%;
+    height: 60vh;
+  }
+  
+  .sectionContent {
+    flex-direction: column-reverse;
+  }
+
+  .textC {
+    width: 80% !important;
+    font-size: 1.5vh;
+  }
+
+  .footer {
+    height: 100vh;
+  }
+
+  .footerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center !important;
+  }
+
+  .footerInfo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+    flex-direction: column;
+  }
+
+  .footerInfo a, h4 {
+    font-size: 14px !important;
+  }
+
+  .footerInfo p {
+    font-size: 14px !important;
+  }
+
+  .footerContent img {
+    margin-bottom: -50%;
+  }
+
+  /* IMPACTO */
+
+  .presencaDigital {
+    height: 170vh;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .imgDesktop {
+    display: none;
+  }
+
+  .imgMobile {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .traco {
+    display: none;
+  }
+
+  .impactoSecao5 {
+    height: 270vh;
+  }
+
+  .impactoSecao6 {
+    padding-top: 30%;
+    height: 40vh;
+  }
+
+  .impactoSecao3 h1 {
+    font-size: 3vh;
+  }
+
+  .playlistContainer iframe {
+    height: 175 !important;
+  }
+
+
 
 }

@@ -89,9 +89,9 @@ export default function Home() {
         <div className='navInfo'>
         <nav>
           <ul>
-            <li style={{ marginLeft: '-55%' }}><a href="#mvv">Sobre</a></li>
-            <li style={{ marginLeft: '20%' }}><Link href="#solucoes">Soluções</Link></li>
-            <li style={{ marginLeft: '20%' }}><Link href="#nobis">Conteúdo</Link></li>
+            <li style={{ marginLeft: '-55%' }}><Link href="#mvv" id='navSobre'>Sobre</Link></li>
+            <li style={{ marginLeft: '20%' }}><Link href="#solucoes" id='navSolucoes'>Soluções</Link></li>
+            <li style={{ marginLeft: '20%' }}><Link href="#nobis" id='navConteudo'>Conteúdo</Link></li>
           </ul>
         </nav>
         <a 
@@ -132,7 +132,7 @@ export default function Home() {
     <div className="solucoes" id="solucoes">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px' }}>
         <div className='title'>
-        <p>No que podemos te ajudar? <a style={{ letterSpacing: "-4px", marginLeft: "1%" }}>-----------------------</a></p>
+        <p>No que podemos te ajudar? <a style={{ letterSpacing: "-3px", marginLeft: "1%" }}>-----------------------</a></p>
         <h1>ESG com Impacto Socioambiental, <br/>
         monitoramento, branding e resultados <span className='gradient-text'>reais.</span></h1>
         </div>

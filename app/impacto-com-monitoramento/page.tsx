@@ -9,6 +9,15 @@ import presenca from '../img/impacto/presenca.png';
 import mockup from '../img/impacto/mockup.png';
 import reportings from '../img/impacto/reportings.png';
 import selo from '../img/impacto/selo.jpeg';
+import passo1 from '../img/impacto/passo1.png';
+import passo2 from '../img/impacto/passo2.png';
+import passo3 from '../img/impacto/passo3.png';
+import passo4 from '../img/impacto/passo4.png';
+import passo5 from '../img/impacto/passo5.png';
+import rep1 from '../img/impacto/rep1.png';
+import rep2 from '../img/impacto/rep2.png';
+import rep3 from '../img/impacto/rep3.png';
+import rep4 from '../img/impacto/rep4.png';
 
 export default function Home() {
   useEffect(() => {
@@ -45,9 +54,9 @@ export default function Home() {
         <div className='navInfo'>
         <nav>
           <ul>
-            <li style={{ marginLeft: '-55%' }}><a href="#mvv">Sobre</a></li>
-            <li style={{ marginLeft: '20%' }}><Link href="/projetos">Soluções</Link></li>
-            <li style={{ marginLeft: '20%' }}><Link href="#nobis">Conteúdo</Link></li>
+            <li style={{ marginLeft: '-55%' }}><Link href="#mvv" id='navSobre'>Sobre</Link></li>
+            <li style={{ marginLeft: '20%' }}><Link href="#solucoes" id='navSolucoes'>Soluções</Link></li>
+            <li style={{ marginLeft: '20%' }}><Link href="#nobis" id='navConteudo'>Conteúdo</Link></li>
           </ul>
         </nav>
         <a 
@@ -77,7 +86,7 @@ export default function Home() {
       {/* Conteúdo sobreposto */}
       <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', color: '#fff', width: "80%", margin: "5% auto", padding: "0 20px" }}>
         <p className="frontPageTitle">
-            Monitoramento e Selo <br/> de Materialidade ESG
+            Monitoramento e Selo de Materialidade ESG
         </p>
         <p className='subtitle'>
             Invista em Impacto Socioambiental com <strong>tecnologia</strong> e <strong>resultados garantidos</strong>.
@@ -88,13 +97,28 @@ export default function Home() {
 
     <div className='presencaDigital'>
         <div className='title'>
-            <p>Transformação de ponta-a-ponta <a style={{ letterSpacing: "-4px", marginLeft: "1%" }}>-----------------------</a></p>
+            <p>Transformação de ponta-a-ponta <a style={{ letterSpacing: "-4px", marginLeft: "1%" }} className='traco'>-----------------------</a></p>
             <h1>Desenvolvemos, implantamos e monitoramos <br/> projetos de Impacto com <span className='gradient-text'>Presença Digital.</span></h1>
         </div>
-        <img src={presenca.src} style={{ margin: "0 auto" }} />
+        <a 
+          href="https://wa.me/5541992286680?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          ><img src={presenca.src} style={{ margin: "0 auto" }} className='imgDesktop' /></a>
+        <div className='imgMobile'>
+          <img src={passo1.src} style={{ margin: "0 auto" }} />
+          <img src={passo2.src} style={{ margin: "0 auto" }} />
+          <img src={passo3.src} style={{ margin: "0 auto" }} />
+          <img src={passo4.src} style={{ margin: "0 auto" }} />
+          <a 
+          href="https://wa.me/5541992286680?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços." 
+          target="_blank" 
+          rel="noopener noreferrer"
+          ><img src={passo5.src} style={{ margin: "0 auto" }} /></a>
+        </div>
     </div>
     <div className='impactoSecao2'>
-        <img src={mockup.src} />
+        <img src={mockup.src} className='imgDesktop' />
         <div className='text'>
             <h1>Materialidade dos <br/><span className='gradient-text'>Investimentos Socioambientais</span></h1>
             <p>
@@ -129,7 +153,7 @@ export default function Home() {
     </div>
     <div className='impactoSecao4'>
         <div className='title'>
-            <p>Histórias Reais <a style={{ letterSpacing: "-4px", marginLeft: "1%" }}>-----------------------</a></p>
+            <p>Histórias Reais <a style={{ letterSpacing: "-4px", marginLeft: "1%" }} className='traco'>-----------------------</a></p>
             <h1>Pessoas <span className='gradient-text'>Reais.</span></h1>
         </div>
         <div className="playlistContainer">
@@ -138,10 +162,16 @@ export default function Home() {
     </div>
     <div className='impactoSecao5'>
         <div className='title'>
-            <p>Materialidade e Certificação de Impacto <a style={{ letterSpacing: "-4px", marginLeft: "1%" }}>-----------------------</a></p>
+            <p>Materialidade e Certificação de Impacto <a style={{ letterSpacing: "-4px", marginLeft: "1%" }} className='traco'>-----------------------</a></p>
             <h1>Seu investimento socioambiental <br/>validado para  <span className='gradient-text'>reportings ESG.</span></h1>
         </div>
-        <img style={{ margin: "0 auto" }} src={reportings.src} />
+        <img style={{ margin: "0 auto" }} src={reportings.src} className='imgDesktop' />
+        <div className='imgMobile'>
+          <img src={rep1.src} style={{ margin: "0 auto" }} />
+          <img src={rep2.src} style={{ margin: "0 auto" }} />
+          <img src={rep3.src} style={{ margin: "0 auto" }} />
+          <img src={rep4.src} style={{ margin: "0 auto" }} />
+        </div>
     </div>
     <div className='impactoSecao6' id='selo'>
         <img src={selo.src} style={{ width: '80%', margin: '0 auto' }} />

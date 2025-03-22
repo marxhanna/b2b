@@ -107,16 +107,20 @@ const TeamCarousel: React.FC = () => {
         </div>
       ))}
       <style jsx>{`
-        @media (max-width: 768px) {
+        @media (max-width: 1000px) {
         div {
           margin-top: 50%;
           max-width: 100%;
         }
         h4 {
-          font-size: 15px !important;
+          width: 200% !important;
+          margin-left: -50% !important;
+          font-size: 2vh !important;
         }
         p {
-          font-size: 12px !important;
+          width: 200% !important;
+          margin-left: -50% !important;
+          font-size: 2vh !important;
         }
       }
       `}</style>
