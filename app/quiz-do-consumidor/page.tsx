@@ -72,7 +72,7 @@ export default function Home() {
 
       {/* Conteúdo sobreposto */}
       <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', color: '#fff', width: "80%", margin: "5% auto", padding: "0 20px" }}>
-        <p className="frontPageTitle" style={{ fontSize: '11vh', textAlign: 'center', marginBottom: '3%' }}>
+        <p className="frontPageTitle" id='quizTitle' style={{ fontSize: '11vh', textAlign: 'center', marginBottom: '3%' }}>
         Quiz do<br/>Consumidor
         </p>
         <p className='subtitle' style={{ fontSize: '3vh' }}>

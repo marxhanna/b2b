@@ -1166,6 +1166,69 @@ li {
     height: 175 !important;
   }
 
+  /* COMUNICACAO E BRANDING */
 
+  #cb {
+    font-size: 6vh !important;
+  }
+
+  .brandingSecao1 {
+    height: 120vh;
+  }
+
+  .brandingSecao2 h1 {
+    font-size: 6vh;
+    line-height: 6vh;
+  }
+
+  .brandingSecao3 {
+    height: 90vh;
+  }
+
+  .brandingSecao4 {
+    height: 90vh;
+  }
+
+  .brandingSecao5 {
+    margin-top: -15%;
+    height: 50vh;
+  }
+
+  #eq {
+    margin-top: 15% !important;
+    height: auto !important;
+    width: 90%;
+  }
+
+  /* HANDS ON ESG */
+
+  .handsonSecao1 {
+    height: 160vh;
+    flex-direction: column;
+  }
+
+  .handsonSecao2 {
+    height: 250vh;
+  }
+
+  .esghowto {
+    flex-direction: column;
+  }
+
+  /* ROTA ESG */
+
+  #rotaTitle {
+    font-size: 10vh !important;
+    line-height: 8vh;
+    margin-bottom: 15% !important;
+  }
+
+  /* QUIZ CONSUMIDOR */
+
+  #quizTitle {
+    font-size: 7vh !important;
+    line-height: 8vh;
+    margin-bottom: 15% !important;
+  }
 
 }

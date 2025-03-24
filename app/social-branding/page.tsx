@@ -78,7 +78,7 @@ export default function Home() {
 
       {/* Conteúdo sobreposto */}
       <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', color: '#fff', width: "80%", margin: "5% auto", padding: "0 20px" }}>
-        <p className="frontPageTitle" style={{ fontSize: '8.5vh', textAlign: 'center' }}>
+        <p className="frontPageTitle" id='cb' style={{ fontSize: '8.5vh', textAlign: 'center' }}>
             Conecte impacto socioambiental<br/>ao valor das marcas
         </p>
         <p className='subtitle'>
@@ -104,7 +104,7 @@ export default function Home() {
                 <li>912 milhões de usuários utilizam <b>bloqueadores</b> de anúncios. (Luiz Zaka - DROPS)</li>
             </ul>
         </div>
-        <img src={socials.src} style={{ height: "80%" }} />
+        <img src={socials.src} style={{ height: "80%" }} className='imgDesktop' />
     </div>
     <div className='brandingSecao2'>
         <h1>A Nobis coloca sua marca no <br/> coração dos consumidores.</h1>
@@ -122,10 +122,10 @@ export default function Home() {
           </ul>
           <button>Simples assim!</button>
         </div>
-        <img src={section3img.src} />
+        <img src={section3img.src} className='imgDesktop' />
     </div>
     <div className='brandingSecao4'>
-      <img src={section4img.src} />
+      <img src={section4img.src} className='imgDesktop' />
       <div className='text'>
         <p>Num click!</p>
         <h1>Monitoramento em <span className='gradient-text'>tempo real</span></h1>
@@ -140,7 +140,7 @@ export default function Home() {
         <div className='title'>
           <h1 style={{ textAlign: "center" }}>Equilíbrio entre <span className='gradient-text'>Impacto<br/>Global</span> e <span className='gradient-text'>Relevância Local</span></h1>
         </div>
-        <img style={{ margin: "0 auto", height: "80vh" }} src={section5img.src} />
+        <img style={{ margin: "0 auto", height: "80vh" }} src={section5img.src} id='eq' />
     </div>
     <br/><br/>
     <div className='outrasSolucoes' style={{ height: "80vh" }}>
