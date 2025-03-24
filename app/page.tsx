@@ -189,7 +189,7 @@ export default function Home() {
           <div className="carousel" style={{ width: "30%" }}>
             <TeamCarousel /> 
           </div>
-          <div className="textC" style={{ width: "100%" }}>
+          <div className="textC" style={{ width: "100%" }} id='sobre'>
             <div className='title'>
               <p>As faces por trás <a style={{ letterSpacing: "-4px", marginLeft: "1%" }}>----------------</a></p>
               <h1>Quem somos <a className="gradient-text">nós?</a></h1>

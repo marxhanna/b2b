@@ -77,9 +77,10 @@ export default function Header() {
           }`}
         >
         <ul className="flex space-x-8 list-none">
-            <li><a href="#mvv">Sobre</a></li>
+           <li><a href="/">Home</a></li>
+            <li><a href="/#sobre">Sobre</a></li>
             <li><Link href="/#solucoes">Soluções</Link></li>
-            <li><Link href="#nobis">Conteúdo</Link></li>
+            
         </ul>
 
           {/* Botão de contato */}
