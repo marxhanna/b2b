@@ -39,7 +39,7 @@ export default function Home() {
     </div>
 
     <div className='rotaQuiz'>
-      <iframe width="80%" height="650px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=cxnAfcPMGUWdMAbzWUv0Xx6EKStY_ZxLgv5rlQ1m5sZUMVVUSE9BWEFINlRXU1hFVVhZMUQxN0EzQi4u&embed=true" style={{border: "none", margin: "0 auto"}} allowFullScreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+      <iframe width="80%" height="650px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=cxnAfcPMGUWdMAbzWUv0Xx6EKStY_ZxLgv5rlQ1m5sZUMVVUSE9BWEFINlRXU1hFVVhZMUQxN0EzQi4u&embed=true" style={{border: "none", margin: "0 auto"}} allowFullScreen webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true"> </iframe>
     </div>
     
     <div className="footer">
