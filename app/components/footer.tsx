@@ -37,15 +37,15 @@ const Footer = () => {
               <a href="https://esg.nobisapp.com.br/#sobre/" target="_blank" rel="noopener noreferrer">
                 A Nobis
               </a>
-              <a href="https://esg.nobisapp.com.br/paginas/politica-de-privacidade/" target="_blank" rel="noopener noreferrer">
+              <a href="https://esg.nobisapp.com.br/politica-de-privacidade/index.html" target="_blank" rel="noopener noreferrer">
                 Política de Privacidade
               </a>
               <a href="https://agentes.nobisapp.com.br/" target="_blank" rel="noopener noreferrer">
                 Seja um Parceiro
               </a>
-              <a href="https://esg.nobisapp.com.br/paginas/imprensa/" target="_blank" rel="noopener noreferrer">
+              {/* <a href="https://esg.nobisapp.com.br/paginas/imprensa/" target="_blank" rel="noopener noreferrer">
                 Comunicação & Imprensa
-              </a>
+              </a> */}
               <Link href={"/transparencia"}>Transparência</Link>
             </div>
             <div>
