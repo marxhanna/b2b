@@ -77,10 +77,9 @@ export default function Header() {
           }`}
         >
         <ul className="flex space-x-8 list-none">
-           <li><a href="/">Home</a></li>
             <li><a href="/#sobre">Sobre</a></li>
             <li><Link href="/#solucoes">Soluções</Link></li>
-            
+            <li><Link href="/#nobis">Conteúdo</Link></li>
         </ul>
 
           {/* Botão de contato */}
@@ -114,9 +113,9 @@ export default function Header() {
 
     {/* Links */}
     <ul className="text-lg font-semibold space-y-6 mt-12 list-none">
-      <li><a href="#mvv" className="block py-2" onClick={() => setIsOpen(false)}>Sobre</a></li>
+      <li><a href="/" onClick={() => setIsOpen(false)}>Home</a></li>
+      <li><a href="#sobre" className="block py-2" onClick={() => setIsOpen(false)}>Sobre</a></li>
       <li><Link href="/#solucoes" className="block py-2" onClick={() => setIsOpen(false)}>Soluções</Link></li>
-      <li><Link href="#nobis" className="block py-2" onClick={() => setIsOpen(false)}>Conteúdo</Link></li>
     </ul>
 
     {/* Botão de contato */}
