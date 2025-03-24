@@ -16,6 +16,7 @@ import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import TeamCarousel from '../app/components/team';
 import palestras from '../app/img/palestras.png';
 import esgcast from '../app/img/esgcast.png';
+import Header from '../app/components/header';
 
 const produtos = [
   { id: "impacto", src: impacto.src, titulo: "Impacto socio-\nambiental com\nmonitoramento" },
@@ -55,54 +56,9 @@ export default function Home() {
     }
   };
 
-  useEffect(() => {
-    if (typeof window === "undefined") return; // Garante que só execute no cliente
-
-    const handleScroll = () => {
-      const header = document.getElementById("header") as HTMLElement | null;
-      const section1 = document.getElementById("section1") as HTMLElement | null;
-
-      if (!header || !section1) return;
-
-      const section1Bottom = section1.offsetTop + section1.offsetHeight;
-      const scrollY = window.scrollY || window.pageYOffset;
-
-      if (scrollY >= section1Bottom) {
-        header.classList.add("solid");
-        header.classList.remove("transparent");
-      } else {
-        header.classList.add("transparent");
-        header.classList.remove("solid");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll); // Cleanup
-  }, []);
   return (
     <>
-       <header className="floating-header transparent" id="header">
-      <div className="container-header">
-        <div className="logo-header" id="logoHeader">
-          <Link href={"/"}><img src={img.src} style={{ height: "80px" }} /></Link>
-        </div>
-        <div className='navInfo'>
-        <nav>
-          <ul>
-            <li style={{ marginLeft: '-55%' }}><Link href="#mvv" id='navSobre'>Sobre</Link></li>
-            <li style={{ marginLeft: '20%' }}><Link href="#solucoes" id='navSolucoes'>Soluções</Link></li>
-            <li style={{ marginLeft: '20%' }}><Link href="#nobis" id='navConteudo'>Conteúdo</Link></li>
-          </ul>
-        </nav>
-        <a 
-          href="https://wa.me/5541992286680?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços." 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="button-header"
-          ><span>Contato</span></a>
-        </div>
-      </div>
-    </header>
+    <Header />
     <div style={{ position: 'relative', height: '100vh', overflow: 'hidden' }} id="section1">
       {/* Imagem de fundo */}
       <img src={heroBG.src} 

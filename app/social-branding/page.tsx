@@ -11,56 +11,12 @@ import section4img from '../img/branding/secao4img.png';
 import section5img from '../img/branding/secao5img.png';
 import palestras from '../img/palestras.png';
 import esgcast from '../img/esgcast.png';
+import Header from '../components/header';
 
 export default function Home() {
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    const handleScroll = () => {
-      const header = document.getElementById("header") as HTMLElement | null;
-      const section1 = document.getElementById("section1") as HTMLElement | null;
-
-      if (!header || !section1) return;
-
-      const section1Bottom = section1.offsetTop + section1.offsetHeight;
-      const scrollY = window.scrollY || window.pageYOffset;
-
-      if (scrollY >= section1Bottom) {
-        header.classList.add("solid");
-        header.classList.remove("transparent");
-      } else {
-        header.classList.add("transparent");
-        header.classList.remove("solid");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll); // Cleanup
-  }, []);
   return (
     <>
-       <header className="floating-header transparent" id="header">
-      <div className="container-header">
-        <div className="logo-header" id="logoHeader">
-          <Link href={"/"}><img src={img.src} style={{ height: "80px" }} /></Link>
-        </div>
-        <div className='navInfo'>
-        <nav>
-          <ul>
-            <li style={{ marginLeft: '-55%' }}><a href="#mvv">Sobre</a></li>
-            <li style={{ marginLeft: '20%' }}><Link href="/projetos">Soluções</Link></li>
-            <li style={{ marginLeft: '20%' }}><Link href="#nobis">Conteúdo</Link></li>
-          </ul>
-        </nav>
-        <a 
-          href="https://wa.me/5541992286680?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços." 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="button-header"
-          ><span>Contato</span></a>
-        </div>
-      </div>
-    </header>
+    <Header />
     <div style={{ position: 'relative', height: '100vh', overflow: 'hidden' }} id="section1">
       {/* Imagem de fundo */}
       <img src={heroBG.src} 
