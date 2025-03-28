@@ -83,7 +83,7 @@ export default function Home() {
         <p className='subtitle'>
           A <strong>única</strong> plataforma que integra soluções em ESG de <strong>ponta-a-ponta</strong>.
         </p>
-        <a className="initBtn" href="#sobre">Conheça nossas soluções</a>
+        <a className="initBtn" href="#solucoes">Conheça nossas soluções</a>
       </div>
     </div>
     <div className="solucoes" id="solucoes">

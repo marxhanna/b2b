@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
     <Header />
-    <div style={{ position: 'relative', height: '100vh', overflow: 'hidden' }} id="section1">
+    <div style={{ position: 'relative', height: '100vh', overflow: 'hidden' }}>
       {/* Imagem de fundo */}
       <img src={heroBG.src} 
         style={{ 
@@ -38,14 +38,14 @@ export default function Home() {
         <p className="frontPageTitle" id='cb' style={{ fontSize: '8.5vh', textAlign: 'center' }}>
             Conecte impacto socioambiental<br/>ao valor das marcas
         </p>
-        <p className='subtitle'>
+        <p className='subtitle' id="section1">
             Em vez de desperdiçar investimentos com <strong>publicidade ineficaz, faça Social Branding.</strong>
         </p>
         <a className="initBtn" href="#sobre">Saiba Mais</a>
       </div>
     </div>
 
-    <div className='brandingSecao1'>
+    <div className='brandingSecao1' id='sobre'>
         <div className='text'>
             <h1 style={{ fontSize: "4.5vh" }}>O cenário da publicidade<br/>digital está <span className='gradient-text'>saturado.</span></h1>
             <br/>
@@ -77,7 +77,12 @@ export default function Home() {
             <li>Ativação Econômica Mútua</li>
             <li>Monitoramento</li>
           </ul>
-          <button>Simples assim!</button>
+          <a
+            href="https://wa.me/5541992286680?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button-header"
+          ><button>Simples assim!</button></a>
         </div>
         <img src={section3img.src} className='imgDesktop' />
     </div>
@@ -90,7 +95,12 @@ export default function Home() {
           <li>Indicadores de Branding e Expansão de Mercado.</li>
           <li>30 indicadores socioambientais alinhados aos ODS e ESG.</li>
         </ul>
-        <button>Dados na palma da mão</button>
+        <a
+            href="https://wa.me/5541992286680?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button-header"
+          ><button>Dados na palma da mão</button></a>
       </div>
     </div>
     <div className='brandingSecao5'>

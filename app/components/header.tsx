@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import img from '../img/logos/nobis_principal_branca.png';
+import { Divider } from "antd";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,13 +26,13 @@ export default function Header() {
     const handleScroll = () => {
       const header = document.getElementById("header") as HTMLElement | null;
       const section1 = document.getElementById("section1") as HTMLElement | null;
-
+    
       if (!header || !section1) return;
-
-      const section1Bottom = section1.offsetTop + section1.offsetHeight;
+    
+      const section1Top = section1.offsetTop;
       const scrollY = window.scrollY || window.pageYOffset;
-
-      if (scrollY >= section1Bottom) {
+    
+      if (scrollY >= section1Top) {
         header.classList.add("solid");
         header.classList.remove("transparent");
         setIsScrolled(true);
@@ -39,7 +41,7 @@ export default function Header() {
         header.classList.remove("solid");
         setIsScrolled(false);
       }
-    };
+    };    
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll); // Cleanup
@@ -78,8 +80,27 @@ export default function Header() {
         >
         <ul className="flex space-x-8 list-none">
             <li><a href="/#sobre">Sobre</a></li>
-            <li><Link href="/#solucoes">Soluções</Link></li>
-            <li><Link href="/#nobis">Conteúdo</Link></li>
+            <li className="relative">
+              <button 
+                className="flex items-center space-x-2" 
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              >
+                <span>Soluções</span>
+                <ChevronDown size={20} />
+              </button>
+              {isDropdownOpen && (
+                <ul className="absolute left-0 mt-2 w-56 bg-black/50 text-white shadow-md rounded-lg overflow-hidden list-none">
+                  <li><Link href="/impacto-com-monitoramento" className="block px-4 py-2 hover:bg-violet-700">Impacto com Monitoramento</Link></li>
+                  <li><Link href="/social-branding" className="block px-4 py-2 hover:bg-violet-700">Comunicação e
+                  Branding em ESG</Link></li>
+                  <li><Link href="/impacto-com-monitoramento#selo" className="block px-4 py-2 hover:bg-violet-700">Selo de Materialidade</Link></li>
+                  <li><Link href="/hands-on-esg" className="block px-4 py-2 hover:bg-violet-700">Hands On ESG</Link></li>
+                  <li><Link href="/rota-esg" className="block px-4 py-2 hover:bg-violet-700">Rota ESG</Link></li>
+                  <li><Link href="/quiz-do-consumidor" className="block px-4 py-2 hover:bg-violet-700">Quiz do Consumidor</Link></li>
+                </ul>
+              )}
+            </li>
+            <li><Link href="/esgcast">Conteúdo</Link></li>
         </ul>
 
           {/* Botão de contato */}
@@ -115,7 +136,17 @@ export default function Header() {
     <ul className="text-lg font-semibold space-y-6 mt-12 list-none">
       <li><a href="/" onClick={() => setIsOpen(false)}>Home</a></li>
       <li><a href="#sobre" className="block py-2" onClick={() => setIsOpen(false)}>Sobre</a></li>
-      <li><Link href="/#solucoes" className="block py-2" onClick={() => setIsOpen(false)}>Soluções</Link></li>
+      <li><Link href="/esgcast" onClick={() => setIsOpen(false)}>Conteúdo</Link></li>
+      <p style={{ marginTop: "35px", marginBottom: "-30px", fontSize: "14px" }}>CONHEÇA NOSSAS SOLUÇÕES</p>
+      <p style={{ letterSpacing: "-5px" }}>------------------------------------</p> 
+      <div style={{ marginTop: "10px" }}>
+        <li><Link href="/impacto-com-monitoramento" className="block py-2" onClick={() => setIsOpen(false)}>Impacto com Monitoramento</Link></li>
+        <li><Link href="/social-branding" className="block py-2" onClick={() => setIsOpen(false)}>Comunicação e Branding em ESG</Link></li>
+        <li><Link href="/impacto-com-monitoramento#selo" className="block py-2" onClick={() => setIsOpen(false)}>Selo de Materialidade</Link></li>
+        <li><Link href="/hands-on-esg" className="block py-2" onClick={() => setIsOpen(false)}>Hands On ESG</Link></li>
+        <li><Link href="/rota-esg" className="block py-2" onClick={() => setIsOpen(false)}>Rota ESG</Link></li>
+        <li><Link href="/quiz-do-consumidor" className="block py-2" onClick={() => setIsOpen(false)}>Quiz do Consumidor</Link></li>
+      </div>
     </ul>
 
     {/* Botão de contato */}

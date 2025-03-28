@@ -60,16 +60,14 @@ const TeamCarousel: React.FC = () => {
               transition: 'transform 0.5s ease-in-out',
             }}
           >
-            <Image
-              src={member.image}
+            <img
+              src={member.image.src}
               alt={member.name}
-              layout="intrinsic"
-              width={500}
-              height={600}
               style={{
                 borderRadius: '8px',
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
               }}
+              id='teamImg'
             />
           </div>
         ))}

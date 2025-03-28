@@ -21,13 +21,13 @@ import rep4 from '../img/impacto/rep4.png';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import etno from '../img/impacto/etnodesenvolvimento.jpg';
-import empre from '../img/impacto/carrossel4.png';
+import empre from '../img/impacto/empreendedorismo.jpg';
 
 export default function Home() {
   return (
     <>
     <Header />
-    <div style={{ position: 'relative', height: '100vh', overflow: 'hidden' }} id="section1">
+    <div style={{ position: 'relative', height: '100vh', overflow: 'hidden' }}>
       {/* Imagem de fundo */}
       <img src={heroBG.src} 
         style={{ 
@@ -44,7 +44,7 @@ export default function Home() {
 
       {/* Conteúdo sobreposto */}
       <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', color: '#fff', width: "80%", margin: "5% auto", padding: "0 20px" }}>
-        <p className="frontPageTitle">
+        <p className="frontPageTitle" style={{ textAlign: "center" }} id="section1">
             Monitoramento e Selo de Materialidade ESG
         </p>
         <p className='subtitle'>
@@ -54,7 +54,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className='presencaDigital'>
+    <div className='presencaDigital' id='sobre'>
         <div className='title'>
             <p>Transformação de ponta-a-ponta <a style={{ letterSpacing: "-4px", marginLeft: "1%" }} className='traco'>-----------------------</a></p>
             <h1>Desenvolvemos, implantamos e monitoramos <br/> projetos de Impacto com <span className='gradient-text'>Presença Digital.</span></h1>
@@ -78,7 +78,7 @@ export default function Home() {
     </div>
     <div className='impactoSecao2'>
         <img src={mockup.src} className='imgDesktop' />
-        <div className='text'>
+        <div className='text' id='notebook'>
             <h1>Materialidade dos <br/><span className='gradient-text'>Investimentos Socioambientais</span></h1>
             <p>
                 <b>Digital</b>

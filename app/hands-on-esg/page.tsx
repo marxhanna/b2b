@@ -42,7 +42,7 @@ export default function Home() {
         <a className="initBtn" href="#sobre">Saiba Mais</a>
       </div>
     </div>
-    <div className='handsonSecao1'>
+    <div className='handsonSecao1' id='sobre'>
         <div className='text'>
           <h1 style={{ fontSize:'5vh', lineHeight: '5vh', marginBottom: '5%' }}><span className='gradient-text'>Agilis:</span> mais do que um conceito, ações que geram resultados.</h1>
           <p>Com a Metodologia Agilis para consultoria, sua empresa aprende, aplica e atinge resultados com ESG.</p>
